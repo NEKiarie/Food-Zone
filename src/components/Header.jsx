@@ -9,7 +9,7 @@ const Header = () => {
       <div className='hidden md:flex w-full h-full'>
         <div className='flex items-center gap-2'>
           <img src={Logo} alt='logo' className='w-8 object-cover' />
-          <p className='text-headingColor text-xl font-bold'>City</p>
+          <p className='text-headingColor text-xl font-bold'>Food zone</p>
         </div>
         <ul className='flex items-center gap-8 ml-auto'>
           <li className='text-base text-textColor hover:text-headingColor cursor-pointer duration-100 transition-all 
