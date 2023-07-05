@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from "./img/chef1.png"
-import Avatar from "./img/avatar.png"
+import Logo from "../img/chef1.png"
+import Avatar from "../img/avatar.png"
 import { MdShoppingBasket } from 'react-icons/md'
 
 const Header = () => {
