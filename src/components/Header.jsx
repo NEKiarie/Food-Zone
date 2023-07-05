@@ -1,17 +1,20 @@
 import React from 'react'
-import Logo from "./img/logo.png"
+import Logo from "./img/chef1.png"
+import Avatar from "./img/avatar.png"
 import { MdShoppingBasket } from 'react-icons/md'
 
 const Header = () => {
   return (
     <header className='fixed z-50 w-screen p-6 px-16'>
       {/*Desktop & Tablet views*/}
-      <div className='hidden md:flex w-full h-full'>
+      <div className='hidden md:flex w-full h-full items-center justify-between'>
         <div className='flex items-center gap-2'>
-          <img src={Logo} alt='logo' className='w-8 object-cover' />
+          <img src={Logo} alt='logo' className='w-12 object-cover' />
           <p className='text-headingColor text-xl font-bold'>Food zone</p>
         </div>
-        <ul className='flex items-center gap-8 ml-auto'>
+
+        <div className='flex items-center gap-8'>
+          <ul className='flex items-center gap-8'>
           <li className='text-base text-textColor hover:text-headingColor cursor-pointer duration-100 transition-all 
             ease-in-out'>Home</li>
           <li className='text-base text-textColor hover:text-headingColor cursor-pointer duration-100 transition-all 
@@ -22,10 +25,12 @@ const Header = () => {
           ease-in-out'>Service</li>
         </ul>
         <div className='relative flex items-center justify-center'>
-          <MdShoppingBasket className='text-textColor text-2xl ml-8 cursor-pointer' />
+          <MdShoppingBasket className='text-textColor text-2xl cursor-pointer' />
           <div className='absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center'>
             <p className='text-sm text-white font-semibold'>2</p>
           </div>
+        </div>
+        <img src = {Avatar} alt='userprofile' className='w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl' />
         </div>
       </div>
 
